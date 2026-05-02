@@ -35,31 +35,29 @@ export default function Home() {
             </span>
 
             <div className="space-y-5">
-              <h1 className="max-w-3xl text-4xl text-white sm:text-5xl lg:text-7xl">
-                Clean interfaces with a
-                <span className="block text-emerald-300 [text-shadow:0_0_24px_rgba(45,212,191,0.32)]">
-                  sharp hacker edge.
+              <h1 className="max-w-3xl text-emerald-300  [text-shadow:0_0_24px_rgba(45,212,191,0.32)]   sm:text-5xl lg:text-7xl">
+                 Next.js Developer 
+                <span className="block   text-white text-4xl">
+                 Building High-Performance, Scalable Web Applications.
                 </span>
               </h1>
               <p className="max-w-2xl text-base leading-8 text-slate-300 sm:text-lg">
-                I design and build dark, modern web experiences with distinctive
-                typography, structured layouts, and frontend code that feels as
-                precise as the visuals look.
+                Building the next generation of the web with Next.js. Dedicated to clean code, modular styling with Sass, and creating interfaces that feel as fast as they look.
               </p>
             </div>
 
             <div className="flex flex-col gap-3 sm:flex-row">
               <Link
-                href="/projects"
-                className="inline-flex items-center justify-center rounded-full border border-emerald-300/30 bg-emerald-300 px-6 py-3 text-sm font-semibold text-slate-950 transition hover:-translate-y-0.5 hover:bg-emerald-200"
+                href="/about"
+                className="inline-flex items-center justify-center rounded-full border border-emerald-300/30 bg-emerald-800 px-6 py-3 text-sm font-semibold text-slate-950 transition hover:-translate-y-0.5 hover:bg-emerald-600"
               >
-                View Projects
+                Resume
               </Link>
               <Link
-                href="/about"
+                href="/projects"
                 className="inline-flex items-center justify-center rounded-full border border-emerald-400/18 bg-white/4 px-6 py-3 text-sm font-semibold text-slate-100 transition hover:border-emerald-300/30 hover:bg-emerald-400/8"
               >
-                Explore Profile
+                View Projects
               </Link>
             </div>
 
@@ -104,7 +102,7 @@ export default function Home() {
                 />
               </div>
 
-              <div className="mt-4 rounded-[1.25rem] border border-emerald-400/12 bg-black/18 p-5">
+              {/* <div className="mt-4 rounded-[1.25rem] border border-emerald-400/12 bg-black/18 p-5">
                 <p className="font-mono text-[11px] uppercase tracking-[0.28em] text-emerald-200/70">
                   developer.log
                 </p>
@@ -113,7 +111,8 @@ export default function Home() {
                   Frontend-focused developer building portfolio sites, product
                   pages, and clean user interfaces with modern web tools.
                 </p>
-              </div>
+              </div> */}
+
             </div>
           </div>
         </div>

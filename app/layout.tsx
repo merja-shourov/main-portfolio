@@ -22,7 +22,7 @@ const ibmPlexMono = IBM_Plex_Mono({
 export const metadata: Metadata = {
   title: "Next.js Developer in Dhaka | Next.js & Node.js Specialist – merjaShourov",
   description:
-    "I’m a Full Stack Web Developer specializing in Next.js, React, and scalable web apps. Check my projects, skills, and contact me for freelance work.",
+    "This is Merja Shourov a Full Stack Web Developer specializing in Next.js, React, and scalable web apps. Check my projects, skills, and contact me for freelance work.",
 };
 
 const navLinks = [
@@ -32,8 +32,8 @@ const navLinks = [
   { href: "/blog", label: "Blog" },
 ];
 
-const systemChips = ["clean systems", "sharp ui", "next.js builds"];
-const statusChips = ["frontend", "design-minded", "available"];
+const systemChips = ["clean systems", "SEO Focused", "next.js builds"];
+const statusChips = ["frontend", "design-minded", "backend"];
 
 export default function RootLayout({
   children,
@@ -115,7 +115,7 @@ export default function RootLayout({
 
                   <div className="flex flex-wrap gap-3 font-mono text-[10px] uppercase tracking-[0.24em] text-slate-500">
                     <span>Dhaka, Bangladesh</span>
-                    <span>Remote friendly</span>
+                    <span>| Remote friendly</span>
                   </div>
                 </div>
               </div>
@@ -130,8 +130,8 @@ export default function RootLayout({
                 Building clean, high-contrast web experiences with modern
                 frontend tools and a strong eye for visual systems.
               </p>
-              <p className="font-mono text-xs uppercase tracking-[0.28em] text-emerald-200/70">
-                root@merja:~$ shipping-ui
+              <p className="font-mono text-xs uppercase tracking-[0.18em] text-emerald-200/70">
+                &copy; {new Date().getFullYear()} merja_shourov. All rights reserved.
               </p>
             </div>
           </footer>
