@@ -1,9 +1,13 @@
 import type { Metadata } from "next";
-
 import Image from "next/image";
 import Link from "next/link";
 import profile from "@/public/merjaShourov.png";
-// import { useEffect, useState } from "react";
+
+export const metadata: Metadata = {
+  title: "Next.js Developer in Dhaka | Next.js & Node.js Specialist – merjaShourov",
+  description:
+    "This is Merja Shourov a Full Stack Web Developer specializing in Next.js, React, and scalable web apps. Check my projects, skills, and contact me for freelance work.",
+};
 
 const highlights = [
   { label: "Experience", value: "Frontend-led product builds" },
@@ -11,11 +15,6 @@ const highlights = [
   { label: "Focus", value: "Clean UI " },
 ];
 
-export const metadata: Metadata = {
-  title: "Next.js Developer in Dhaka | Next.js & Node.js Specialist – merjaShourov",
-  description:
-    "This is Merja Shourov a Full Stack Web Developer specializing in Next.js, React, and scalable web apps. Check my projects, skills, and contact me for freelance work.",
-};
 
 
 const services = [
