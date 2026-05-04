@@ -32,8 +32,8 @@ const navLinks = [
   { href: "/blog", label: "Blog" },
 ];
 
-const systemChips = ["clean systems", "SEO Focused", "next.js builds"];
-const statusChips = ["frontend", "design-minded", "backend"];
+
+const statusChips = ["Remote Friendly", "Active"];
 
 export default function RootLayout({
   children,
@@ -47,6 +47,7 @@ export default function RootLayout({
     >
       <body className="min-h-full bg-background text-foreground">
         <div className="mx-auto flex min-h-screen w-full max-w-7xl flex-col px-4 pb-10 sm:px-6 lg:px-8">
+
           <header className="sticky top-0 z-20 pt-4">
             <nav className="overflow-hidden rounded-[1.9rem] border border-emerald-400/18 bg-[rgba(3,10,18,0.82)] shadow-[0_22px_80px_rgba(2,6,23,0.48)] backdrop-blur-xl">
               <div className="flex items-center justify-between border-b border-emerald-400/12 px-5 py-3">
@@ -62,7 +63,7 @@ export default function RootLayout({
 
               <div className="flex flex-col gap-4 px-5 py-4 sm:px-6 lg:flex-row lg:items-center lg:justify-between">
                 <div className="flex flex-col gap-3">
-                  <div className="flex items-center justify-between gap-4">
+                  <div className="flex items-center justify-between gap-3">
                     <Link
                       href="/"
                       className="font-[family:var(--font-display)] text-2xl tracking-tight text-white"
@@ -74,7 +75,7 @@ export default function RootLayout({
                     </span>
                   </div>
 
-                  <div className="flex flex-wrap gap-2">
+                  {/* <div className="flex flex-wrap gap-2">
                     {systemChips.map((chip) => (
                       <span
                         key={chip}
@@ -83,7 +84,8 @@ export default function RootLayout({
                         {chip}
                       </span>
                     ))}
-                  </div>
+                  </div> */}
+                  
                 </div>
 
                 <div className="flex flex-col gap-4 lg:items-end">
@@ -101,7 +103,7 @@ export default function RootLayout({
                       ))}
                     </ul>
 
-                    <div className="hidden items-center gap-2 lg:flex">
+                    {/* <div className="hidden items-center gap-2 lg:flex">
                       {statusChips.map((chip) => (
                         <span
                           key={chip}
@@ -110,13 +112,44 @@ export default function RootLayout({
                           {chip}
                         </span>
                       ))}
-                    </div>
+                    </div> */}
+                    <div className="hidden items-center gap-3 lg:flex">
+                        
+                          <span
+                          
+                            className="group relative flex items-center gap-2 overflow-hidden rounded-full 
+                                      border border-emerald-400/20 bg-emerald-400/10 
+                                      px-4 py-1.5 font-mono text-[10px] uppercase tracking-[0.24em] 
+                                      text-emerald-200 transition-all duration-300
+                                      
+                                      hover:-translate-y-[2px] hover:bg-emerald-400/20 
+                                      hover:shadow-[0_0_12px_rgba(52,211,153,0.35)]"
+                          >
+                            {/* glowing pulse dot */}
+                            <span className="relative flex h-2 w-2">
+                              <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-400 opacity-75"></span>
+                              <span className="relative inline-flex h-2 w-2 rounded-full bg-emerald-400"></span>
+                            </span>
+
+                            
+
+                            Active
+
+                            {/* animated shine */}
+                            <span className="pointer-events-none absolute inset-0 opacity-0 group-hover:opacity-100">
+                              <span className="absolute -left-1/2 top-0 h-full w-1/2 
+                                              bg-gradient-to-r from-transparent via-white/10 to-transparent 
+                                              skew-x-12 animate-[shine_1.2s_linear]"></span>
+                            </span>
+                          </span>
+                        
+                      </div>  
                   </div>
 
-                  <div className="flex flex-wrap gap-3 font-mono text-[10px] uppercase tracking-[0.24em] text-slate-500">
+                  {/* <div className="flex flex-wrap gap-3 font-mono text-[10px] uppercase tracking-[0.24em] text-slate-500">
                     <span>Dhaka, Bangladesh</span>
                     <span>| Remote friendly</span>
-                  </div>
+                  </div> */}
                 </div>
               </div>
             </nav>
@@ -135,6 +168,7 @@ export default function RootLayout({
               </p>
             </div>
           </footer>
+
         </div>
       </body>
     </html>
